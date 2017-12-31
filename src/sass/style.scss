@@ -1,0 +1,17 @@
+@import 'global/normalize.scss';
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/scaffolding.scss";
+
+
+@import "block/page-header.scss";
+@import "block/author-info.scss";
+@import "block/main-nav.scss";
+@import "block/page-content.scss";
+@import "block/palette.scss";
+@import "block/works.scss";
+@import "block/about.scss";
+@import "block/contacts.scss";
+@import "block/page-footer.scss";

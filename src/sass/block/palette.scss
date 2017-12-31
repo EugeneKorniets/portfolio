@@ -1,0 +1,25 @@
+.palette {
+	display: flex;
+	flex-direction: row;
+
+	span {
+		flex-basis: 25%;
+		height: 10px;
+	}
+
+	&__light-gray {
+		background-color: $light-gray;
+	}
+
+	&__gray {
+		background-color: $gray;
+	}
+
+	&__deep-gray {
+		background-color: $deep-gray;
+	}
+
+	&__green {
+		background-color: $green;
+	}
+}

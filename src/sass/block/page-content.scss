@@ -1,0 +1,12 @@
+.page-content {
+	background-color: $darkblue;
+}
+
+@media #{$tablet-widths} {
+	.page-content {
+
+		&__container {
+			@include container-fluid;
+		}
+	}
+}

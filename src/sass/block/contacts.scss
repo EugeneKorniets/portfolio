@@ -1,0 +1,77 @@
+.contacts {
+	padding: 20px 0;
+
+	&__heading {
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__wrapper {
+		padding: 20px;
+		color: $darkblue;
+		background-color: $gray;
+	}
+
+	&__email {
+		position: relative;
+		display: block;
+		margin: 0;
+		padding: 10px 0 10px 30px;
+		color: $darkblue;
+		word-wrap: break-word;
+		text-decoration: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background-image: url('../img/svg-icons/email.svg');
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+		}
+	}
+
+	&__phone {
+		position: relative;
+		display: block;
+		padding: 10px 0 10px 30px;
+		color: $darkblue;
+		text-decoration: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background-image: url('../img/svg-icons/mobile.svg');
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+		}
+	}
+
+	&__skype {
+		position: relative;
+		display: block;
+		padding: 10px 0 10px 30px;
+		color: $darkblue;
+		text-decoration: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background-image: url('../img/svg-icons/icon-skype.svg');
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.page-header {
+	min-height: 350px;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__heading {
+		@include visually-hidden;
+	}
+}
+
+@media #{$tablet-widths} {
+	.page-header {
+		min-height: 440px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.page-header {
+		min-height: 550px;
+	}
+}
