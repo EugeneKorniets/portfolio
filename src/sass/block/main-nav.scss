@@ -43,7 +43,7 @@
 				width: 100%;
 				height: 4px;
 				background-color: white;
-				transition: background 0 0.3s;
+				transition: background 0 0.2s;
 				border-radius: 2px;
 
 				&::before,
@@ -56,7 +56,7 @@
 					background-color: white;
 					border-radius: 2px;
 					transition-duration: 0.3s, 0.3s;
-					transition-delay: 0.3s, 0;
+					transition-delay: 0.1s, 0;
 				}
 
 				&::before {
