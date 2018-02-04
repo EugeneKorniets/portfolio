@@ -26,6 +26,15 @@
 		width: 80%;
 	}
 
+	&__description {
+		padding: 0 10px;
+	}
+
+	&__description-paragraph {
+		text-align: justify;
+		text-indent: 15px;
+	}
+
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
@@ -55,6 +64,7 @@
 		text-decoration: none;
 		background-color: $green;
 		border-radius: 25px;
+		transition: 0.3s;
 
 		&:hover {
 			background-color: $darkblue;
@@ -71,6 +81,14 @@
 
 		&__item {
 			margin-bottom: 30px;
+		}
+
+		&__description {
+			padding: 0 20px;
+		}
+
+		&__description-paragraph {
+			text-indent: 25px;
 		}
 
 		&__wrapper {
@@ -94,7 +112,13 @@
 @media #{$desktop-widths} {
 	.works {
 
-		
+		&__description {
+			padding: 0 40px;
+		}
+
+		&__description-paragraph {
+			text-indent: 35px;
+		}
 
 		&__layout td,
 		&__optim td,

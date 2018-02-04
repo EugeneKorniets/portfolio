@@ -13,7 +13,10 @@
 		background-color: $gray;
 	}
 
-	&__email {
+	&__email,
+	&__phone,
+	&__skype,
+	&__telegram {
 		position: relative;
 		display: block;
 		margin: 0;
@@ -25,53 +28,41 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: 10px;
+			top: 12px;
 			left: 0;
 			width: 20px;
 			height: 20px;
-			background-image: url('../img/svg-icons/email.svg');
 			background-repeat: no-repeat;
 			background-size: 20px 20px;
+		}
+	}
+
+
+	&__email {
+
+		&::before {
+			background-image: url('../img/svg-icons/email.svg');
 		}
 	}
 
 	&__phone {
-		position: relative;
-		display: block;
-		padding: 10px 0 10px 30px;
-		color: $darkblue;
-		text-decoration: none;
 
 		&::before {
-			content: "";
-			position: absolute;
-			top: 10px;
-			left: 0;
-			width: 20px;
-			height: 20px;
 			background-image: url('../img/svg-icons/mobile.svg');
-			background-repeat: no-repeat;
-			background-size: 20px 20px;
 		}
 	}
 
 	&__skype {
-		position: relative;
-		display: block;
-		padding: 10px 0 10px 30px;
-		color: $darkblue;
-		text-decoration: none;
 
 		&::before {
-			content: "";
-			position: absolute;
-			top: 10px;
-			left: 0;
-			width: 20px;
-			height: 20px;
 			background-image: url('../img/svg-icons/icon-skype.svg');
-			background-repeat: no-repeat;
-			background-size: 20px 20px;
+		}
+	}
+
+	&__telegram {
+
+		&::before {
+			background-image: url('../img/svg-icons/icon-telegram.svg');
 		}
 	}
 }
