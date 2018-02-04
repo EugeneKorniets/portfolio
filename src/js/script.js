@@ -33,9 +33,9 @@ circle();
 
 function circle () {
   for (i = 0; i < circles.length; i++) {
-    var percent = parseFloat(percentage[i].innerHTML);
+    var percent = parseInt(percentage[i].innerHTML);
     percent = percent * 251 / 100;
-    circles[i].innerHTML = '<svg width="100" height="100"><circle transform="rotate(-90)" r="40" cx="-50" cy="50" /><circle transform="rotate(-90)" style="stroke-dasharray:' + percent + ' 251px;" r="40" cx="-50" cy="50" /></svg>' + technology[i].outerHTML;
+    circles[i].innerHTML = '<svg width="100" height="100"><circle transform="rotate(-90)" style="stroke-dasharray:' + percent + ' 251px;" r="40" cx="-50" cy="50" /></svg>' + technology[i].outerHTML + percentage[i].outerHTML;
   };
 };
 /* circle progress bar start */

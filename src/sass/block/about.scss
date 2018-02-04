@@ -25,15 +25,8 @@
 
 	circle {
 		fill: rgba(0,0,0,0);
-		stroke: $light-gray;
-		stroke-width: 15;
-		stroke-dasharray: 251px 251px;
-	}
-
-	circle:nth-child(2n) {
-		fill: rgba(0,0,0,0);
 		stroke: $green;
-		stroke-width: 15;
+		stroke-width: 3;
 	}
 
 	&__technology {
@@ -45,6 +38,10 @@
 		margin: 0;
 		font-size: 12px;
 		line-height: 16px;
+	}
+
+	&__percentage {
+		margin: 0;
 	}
 }
 
