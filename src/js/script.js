@@ -2,6 +2,7 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var authorInfo = document.querySelector('.author-info');
+var navLinks = document.querySelectorAll('.main-nav__link');
 
 if (navMain != null) {
   navMain.classList.remove('main-nav--nojs');
@@ -14,10 +15,16 @@ if (navToggle != null & navMain != null) {
       navMain.classList.remove('main-nav--closed');
       navMain.classList.add('main-nav--opened');
       authorInfo.classList.add('hidden');
+      [].forEach.call(navLinks, function(item) {
+        item.classList.add('main-nav__link--scale');
+      });
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       authorInfo.classList.remove('hidden');
+      [].forEach.call(navLinks, function(item) {
+        item.classList.remove('main-nav__link--scale');
+      });
     }
   });
 }

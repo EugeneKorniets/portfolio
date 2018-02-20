@@ -18,9 +18,15 @@
 		&__link {
 			display: block;
 			padding: 30px 0;
+			transform: scale(0.1, 0.1);
 			color: white;
 			text-decoration: none;
 			text-transform: uppercase;
+			transition: transform 0.3s;
+
+			&--scale {
+				transform: scale(1, 1);
+			}
 		}
 
 		&__toggle {
