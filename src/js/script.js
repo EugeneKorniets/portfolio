@@ -45,4 +45,13 @@ function circle () {
     circles[i].innerHTML = '<svg width="100" height="100"><circle transform="rotate(-90)" style="stroke-dasharray:' + percent + ' 251px;" r="40" cx="-50" cy="50" /></svg>' + technology[i].outerHTML + percentage[i].outerHTML;
   };
 };
-/* circle progress bar start */
+/* circle progress bar end */
+
+
+/* smooth scroll for page navigation  start */
+var hasSmoothScroll = 'scrollBehavior' in document.documentElement.style;
+
+if (!hasSmoothScroll) {
+  // TODO Add smooth scroll behavior polyfill
+}
+/* smooth scroll for page navigation  end */
